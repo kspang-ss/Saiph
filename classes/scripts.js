@@ -133,7 +133,7 @@ function toggle_aside_left() {
         aside_left_active = false;
     } else {
         this.classList.remove('saiph_closed');
-        r.style.setProperty('--saiph-left-aside', '28rem');
+        r.style.setProperty('--saiph-left-aside', '30rem');
         aside_left_active = true;
     }
 }
