@@ -5,7 +5,7 @@
  */
 class Fonts {
     constructor(font_fields = []) {
-        this.google_fonts_api_key = 'AIzaSyAuHZt4e-DNYGHIqNYmjbycu-PBepjNqGA';
+        this.google_fonts_api_key = 'na na';
         this.font_fields = font_fields;
         this.append_font_field_options();
     }
