@@ -1,0 +1,120 @@
+.preview__header .preview__header_placeholder {
+    border: var(--border-width) dashed var(--border-color);
+    text-align: center;
+    padding: var(--size-5);
+}
+.preview__main .preview__main_placeholder {
+    border: var(--border-width) dashed var(--border-color);
+    text-align: center;
+    padding: var(--size-10);
+}
+
+.preview__footer .preview__footer_placeholder {
+    border: var(--border-width) dashed var(--border-color);
+    text-align: center;
+    padding: var(--size-5);
+}
+
+#preview {
+    font-family: var(--typography-body-font);
+    color: var(--typography-body-color);
+    line-height: var(--typography-body-line-height);
+    background-color: var(--body-background-color);
+}
+
+#preview #main {
+    padding-top: var(--header-height);
+}
+#preview #header {
+    position: relative;
+}
+#preview #header header {
+    max-width: calc(100% - var(--saiph-left-aside)) !important;
+}
+#preview #footer footer {
+    background-color: var(--footer-background-color);
+}
+#preview #footer a {
+    color: var(--footer-color);
+    font-size: var(--typography-scale-p);
+}
+    
+#preview .saiph__page {
+    display: none;
+}
+#preview .saiph__page_active {
+    display: block;
+}
+#preview .saiph__body-background-color {
+    background-color: var(--body-background-color);
+}
+#preview .header-color {
+    color: var(--header-color);
+}
+#preview .header-background-color {
+    background-color: var(--header-background-color);
+}
+#preview .footer-color {
+    color: var(--footer-color);
+}
+#preview .footer-background-color {
+    background-color: var(--footer-background-color);
+}
+#preview .svg-stroke-color {
+    stroke: var(--svg-stroke-color);
+}
+#preview .svg-fill-color {
+    fill: var(--svg-fill-color);
+}
+
+/* breakepoint */
+#preview  .hide-xl-down {
+    @media (max-width: 1700px) {
+        display: none !important;
+    }
+}
+#preview  .hide-lg-down {
+    @media (max-width: 1500px) {
+        display: none !important;
+    }
+}
+#preview .hide-md-down {
+    @media (max-width: 1100px) {
+        display: none !important;
+    }
+}
+#preview .hide-sm-down {
+    @media (max-width: 600px) {
+        display: none !important;
+    }
+}
+#preview .hide-xs-down {
+    @media (max-width: 400px) {
+        display: none !important;
+    }
+}
+#preview .hide-xl-up {
+    @media (min-width: 1700px) {
+        display: none !important;
+    }
+}
+#preview .hide-lg-up {
+    @media (min-width: 1500px) {
+        display: none !important;
+    }
+}
+#preview .hide-md-up {
+    @media (min-width: 1100px) {
+        display: none !important;
+    }
+}
+#preview .hide-sm-up {
+    @media (min-width: 600px) {
+        display: none !important;
+    }
+}
+#preview .hide-xs-up {
+    @media (min-width: 400px) {
+        display: none !important;
+    }
+}

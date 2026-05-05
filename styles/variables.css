@@ -1,0 +1,43 @@
+/* Variables */
+:root {
+    --saiph-color-primary: #4a90e2;
+    --saiph-color-secondary: #e2de50;
+    --saiph-color-tertiary: #9013fe;
+    --saiph-color-shade-0: #f8f8f8;
+    --saiph-color-shade-1: #f7f7f7;
+    --saiph-color-shade-2: #ececec;
+    --saiph-color-shade-3: #e0dfdf;
+    --saiph-color-shade-4: #b8b8b8;
+    --saiph-color-shade-5: #a0a0a0;
+    --saiph-color-shade-6: #888888;
+    --saiph-color-shade-7: #565656;
+    --saiph-color-shade-8: #2d2d2f;
+    --saiph-color-shade-9: #141417;
+    --saiph-color-shade-10: #0e0e0f;
+
+    --saiph-tag-color-red: #d72923;
+    --saiph-tag-color-green: #2ab32a;
+    --saiph-tag-color-blue: #2bb2db;
+    --saiph-tag-color-yellow: #e9cb22;
+    --saiph-tag-color-orange: #f39c12;
+    --saiph-tag-color-purple: #841fae;
+    --saiph-tag-color-pink: #d81b99;
+
+    --saiph-font-primary: Arial, sans-serif;
+
+    --saiph-size-xxs: 0.125rem;
+    --saiph-size-xs: 0.33rem;
+    --saiph-size-sm: 0.66rem;
+    --saiph-size-md: 1rem;
+    --saiph-size-lg: 2rem;
+    --saiph-size-xl: 9rem;
+    --saiph-left-aside: 28rem;
+    --saiph-right-aside: 0rem;
+
+    --saiph-border: 0.0625rem solid var(--saiph-color-shade-8);
+    --saiph-radius: 0.375rem;
+    --saiph-shadow: 0 0 0 .25rem rgba(226, 222, 80, 0.2);
+    --saiph-transition: 0.3s cubic-bezier(0.3, 0, 0, 1);
+
+    --saiph-body-height-subtract: 9.2294rem;
+}

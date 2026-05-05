@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saiph App</title>
+
+    <!-- CSS framework -->
+    <link rel="stylesheet" href="../vendor/sheliak-css/variables.css">
+    <link rel="stylesheet" href="../vendor/sheliak-css/sheliak.min.css">
+    <link rel="stylesheet" href="../vendor/css/accordion.css">
+    <link rel="stylesheet" href="../vendor/css/tabs.css">
+
+    <!-- App styles -->
+    <link rel="stylesheet" href="styles/variables.css">
+    <link rel="stylesheet" href="styles/defualts.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/preview.css">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+
+    <!--  Google Fonts -->
+    <link data-google-fonts-body>
+    <link data-google-fonts-h1>
+    <link data-google-fonts-h2>
+    <link data-google-fonts-h3>
+    <link data-google-fonts-h4>
+    <link data-google-fonts-h5>
+    <link data-google-fonts-h6>
+</head>
+<body>
+
+    <aside id="aside__left" class="saiph__aside">
+    </aside>
+
+    <main id="saiph__main">
+        <header id="saiph__header">
+            <div class="saiph__flex_center">
+                <div class="saiph__aside_toggle saiph__flex_center" tabindex="0" id="toggle_aside_left">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ececec" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-panel-left-close-icon lucide-panel-left-close"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M9 3v18"/><path d="m16 15-3-3 3-3"/></svg>
+                </div>
+                <span class="saiph__logo" tabindex="-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4a90e2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles-icon lucide-sparkles"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/><path d="M4 17v2"/><path d="M5 18H3"/></svg>
+                    <b class="saiph__logo__text">Saiph App</b>
+                    <small>v0.8.9</small>
+                </span>
+            </div>
+            <nav>
+                <ul>
+                    <li class="saiph__flex_center saiph__active" data-toggle="preview" tabindex="0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ececec" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye-icon lucide-eye"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"/><circle cx="12" cy="12" r="3"/></svg>
+                        <span>Preview</span>
+                    </li>
+                    <li class="saiph__flex_center" data-toggle="headers" tabindex="0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ececec" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-panel-top-icon lucide-panel-top"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/></svg>
+                        <span>Headers</span>
+                    </li>
+                    <li class="saiph__flex_center" data-toggle="footers" tabindex="0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ececec" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-panel-bottom-icon lucide-panel-bottom"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 15h18"/></svg>
+                        <span>Footers</span>
+                    </li>
+                    <li class="saiph__flex_center" data-toggle="layouts" tabindex="0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ececec" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-columns3-icon lucide-columns-3"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M9 3v18"/><path d="M15 3v18"/></svg>
+                        <span>Layouts</span>
+                    </li>
+                    <li class="saiph__flex_center" data-toggle="components" tabindex="0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ececec" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-blocks-icon lucide-blocks"><rect width="7" height="7" x="14" y="3" rx="1"/><path d="M10 21V8a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1H3"/></svg>
+                        <span>Components</span>
+                    </li>
+                    <li class="saiph__flex_center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ececec" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github-icon lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                        <a href="https://github.com/kspangdg/saiph/tree/main" target="_blank">GitHub</a>
+                    </li>
+                </ul>
+            </nav>
+            <div id="saiph__subheader">
+                <small class="saiph__subheader_item saiph__subheader_item_active" data-page-index="0">...</small>
+            </div>
+        </header>
+        <section id="saiph__body">
+            <div id="saiph__view">
+                <div id="preview">
+                    <div class="saiph__body saiph__body-background-color saiph__hidden" data-page="index">
+                        <div id="header"></div>
+                        <div id="main"></div>
+                        <div id="footer"></div>
+                    </div>
+                </div>
+                <div id="headers" class="saiph__view saiph__hidden">
+                </div>
+                <div id="footers" class="saiph__view saiph__hidden">
+                </div>
+                <div id="layouts" class="saiph__view saiph__hidden">
+                </div>
+                <div id="components" class="saiph__view saiph__hidden">
+                </div>
+            </div>
+            <aside id="aside__right" class="saiph__aside">
+            </aside>
+        </section>
+        <footer id="saiph__footer">
+            <div id="footer__run">
+                <button class="saiph__button saiph__flex_center saiph__button_run" title="⌘R">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f8f8f8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-play-icon lucide-circle-play"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+                    <span>Run</span>
+                </button>
+            </div>
+            <div class="saiph__button_copy">
+                <button class="saiph__button saiph__flex_center" data-copy="output">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f8f8f8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy-icon lucide-copy"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+                    <span>Copy</span>
+                </button>
+            </div>
+            <div id="footer__output">
+                <input class="saiph__input" type="text" id="output" placeholder="Click Run to generate output" data-copy-text="output">
+            </div>
+            <div id="footer__reset">
+                <button class="saiph__button saiph__flex_center" onclick="window.location.reload();">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f8f8f8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rotate-ccw-icon lucide-rotate-ccw"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+                    <span>Rest</span>
+                </button>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Data -->
+    <script src="library/headers/left.js"></script>
+    <script src="library/headers/right.js"></script>
+    <script src="library/headers/between.js"></script>
+    <script src="library/headers/center.js"></script>
+    <script src="library/headers/island.js"></script>
+    <script src="library/footers/base.js"></script>
+
+    <script src="library/layouts/columns.js"></script>
+
+    <script src="library/components/base.js"></script>
+    <script src="library/components/spacers.js"></script>
+    <script src="library/components/misc.js"></script>
+    <script src="library/components/typography.js"></script>
+    <script src="library/components/buttons.js"></script>
+    <script src="library/components/cards.js"></script>
+    <script src="library/components/accordions.js"></script>
+    <script src="library/components/tabs.js"></script>
+
+    <script src="data/library_data.js"></script>
+    <script src="data/menu_data.js"></script>
+    
+    <!-- Util -->
+    <script src="classes/fonts.js"></script>
+    <script src="classes/tools.js"></script>
+    <script src="classes/sizes.js"></script>
+    <script src="classes/typography.js"></script>
+    <script src="classes/card.js"></script>
+    <script src="classes/clipboard.js"></script>
+
+    <!-- Menu -->
+    <script src="classes/fields.js"></script>
+    <script src="classes/fields_flex.js"></script>
+    
+    <script src="classes/preview.js"></script>
+    <script src="classes/filter.js"></script>
+    <script src="classes/library.js"></script>
+    <script src="classes/output.js"></script>
+
+    <!-- Main -->
+    <script src="classes/scripts.js"></script>
+</body>
+</html>

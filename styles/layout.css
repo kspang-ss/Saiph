@@ -1,0 +1,208 @@
+/* Main ---------------------------------------------------------------------- */
+.saiph__aside {
+    padding: var(--saiph-size-md) 0 var(--saiph-size-lg) 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: var(--saiph-color-shade-8) var(--saiph-color-shade-9);
+    box-sizing: unset;
+}
+#saiph__main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--saiph-color-shade-10);
+    padding: 0;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Header ---------------------------------------------------------------------- */
+#saiph__header {
+    flex-shrink: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--saiph-size-md) var(--saiph-size-md) 0 var(--saiph-size-md);
+    border-bottom: var(--saiph-border);
+}
+#saiph__header a, #saiph__header span {
+    color: var(--saiph-color-shade-2);
+    text-decoration: none;
+}
+
+#saiph__header .saiph__aside_toggle {
+    margin-bottom: var(--saiph-size-sm);
+    padding-right: var(--saiph-size-md);
+    border-right: var(--saiph-border);
+    cursor: pointer;
+}
+#saiph__header .saiph__aside_toggle.saiph_closed svg {
+    transform: rotate(180deg);
+}
+#saiph__header .saiph__logo {
+    display: flex;
+    align-items: center;
+    gap: var(--saiph-size-xs);
+    padding-bottom: var(--saiph-size-sm);
+}
+#saiph__header .saiph__logo .saiph__logo__text {
+    color: var(--saiph-color-shade-0);
+}
+#saiph__header nav ul {
+    display: flex;
+    gap: var(--saiph-size-lg);
+    list-style: none;
+    margin: 0;
+}
+#saiph__header nav ul li {
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+    padding-bottom: var(--saiph-size-sm);
+
+}
+#saiph__header nav ul li.saiph__active {
+    border-bottom: 1px solid var(--saiph-color-secondary);
+}
+
+/* Subheader ---------------------------------------------------------------------- */
+#saiph__subheader {
+    display: flex;
+    align-items: center;
+    gap: var(--saiph-size-sm);
+    border-top: var(--saiph-border);
+    color: var(--saiph-color-shade-5);
+    overflow-y: hidden;
+    width: 100%;
+    max-height: 100%;
+}
+#saiph__subheader .saiph__subheader_item {
+    padding: var(--saiph-size-xs) 0;
+    cursor: pointer;
+}
+
+#saiph__subheader .saiph__subheader_item_active  {
+    color: var(--saiph-color-shade-4);
+    border-bottom: 1px solid var(--saiph-color-secondary);
+}
+
+/* Body ---------------------------------------------------------------------- */
+#saiph__body {
+    flex-grow: 1;
+    display: flex;
+    max-height: calc(100vh - var(--saiph-body-height-subtract));
+}
+
+#saiph__view {
+    flex-grow: 1;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: var(--saiph-color-shade-8) var(--saiph-color-shade-9);
+    max-height: calc(100vh - var(--saiph-body-height-subtract));
+}
+
+/* Footer */
+#saiph__footer {
+    display: flex;
+    align-items: center;
+    gap: var(--saiph-size-sm);
+    padding: var(--saiph-size-md);
+    border-top: var(--saiph-border);
+}
+
+#saiph__footer #footer__output {
+    flex-grow: 1;
+    display: flex;
+}
+#saiph__footer #footer__output input {
+    width: 100%;
+    background-color: var(--saiph-color-shade-9);
+}
+
+
+
+#aside__left {
+    flex: 0 0 var(--saiph-left-aside);
+    border-right: var(--saiph-border);
+    transition: flex var(--saiph-transition);
+}
+#aside__left .saiph__menu {
+    padding: 0 var(--saiph-size-lg) 0 var(--saiph-size-md);
+    margin-bottom: var(--saiph-size-md);
+    min-width: 28rem;
+}
+#aside__left .saiph__menu, #aside__left .saiph__menu_option, #aside__right .saiph__filter, #aside__right .saiph__filter_option {
+    display: flex;
+    flex-direction: column;
+}
+#aside__left .saiph__menu_option, #aside__right .saiph__filter_option {
+    padding-top: 0;
+    padding-bottom: var(--saiph-size-md);
+}
+#aside__left .saiph__menu_option .saiph__h4, #aside__right .saiph__filter_option .saiph__h4,
+#aside__left .saiph__h1, #aside__right .saiph__h1
+{
+    margin-bottom: var(--saiph-size-md);
+}
+#aside__left .saiph__menu_option_field, #aside__right .saiph__filter_option_field {
+    transition: background-color var(--saiph-transition), border-color var(--saiph-transition);
+    flex-wrap: wrap;
+}
+#aside__right .saiph__filter_option_field .saiph__p {
+    transition: color var(--saiph-transition);
+}
+#aside__left .saiph__menu_option .saiph__menu_option_field:not(.saiph__menu_option_field__add):hover {
+    border-color: var(--saiph-color-secondary);
+    /* background-color: var(--saiph-color-shade-8); */
+}
+#aside__right .saiph__filter_option_field:hover, #aside__right .saiph__filter_option_field.saiph__active {
+    border-color: var(--saiph-color-secondary);
+    background-color: var(--saiph-color-shade-8);
+    cursor: pointer;
+}
+#aside__right .saiph__filter_option_field.active {
+    border-color: var(--saiph-color-secondary);
+}
+#aside__right .saiph__filter_option_field.active .p {
+    color: var(--saiph-color-shade-0);
+}
+#aside__left .saiph__menu_option_subfields {
+    flex-basis: 100%;
+}
+#aside__left .saiph__menu_subfield {
+    margin-bottom: var(--saiph-size-md);
+}
+#aside__left .saiph__menu_subfield:last-child {
+    margin-bottom: 0;
+}
+#aside__left .saiph__menu_subfield_label {
+    margin-bottom: var(--saiph-size-sm);
+}
+#aside__left .saiph__menu_subfield_add {
+    margin-top: var(--saiph-size-sm);
+}
+#aside__right {
+    padding: 2rem 0;
+    flex: 0 0 var(--saiph-right-aside);
+    transition: flex var(--saiph-transition), padding var(--saiph-transition);
+    border-left: var(--saiph-border);
+}
+.saiph__button_run {
+    border-color: var(--saiph-color-secondary);
+}
+.saiph__view {
+    padding: var(--saiph-size-md);
+}
+.saiph__view_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    gap: var(--saiph-size-md);
+}
+#headers .saiph__view_container {
+    grid-template-columns: repeat(auto-fill, minmax(36rem, 1fr));
+}
+.saiph__color_field {
+    flex-grow: 1;
+}
